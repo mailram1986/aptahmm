@@ -1,0 +1,13 @@
+seed_id,reference,note
+Pobanz2016,"Pobanz et al., 2016",
+Sampson2003,"Sampson et al., 2003",
+Schmitz2023,"Schmitz et al., 2023",
+Duan2023a,"Duan et al., 2023","shares 20 nt 5' and 3' primer flanks with Duan2023b"
+Duan2023b,"Duan et al., 2023","shares 20 nt 5' and 3' primer flanks with Duan2023a"
+Abedi2023,"Abedi et al., 2023",
+Effah2023,"Effah et al., 2023",
+Vishwakarma2023,"Vishwakarma et al., 2023",
+Rizzotto2023,"Rizzotto et al., 2023",
+Frohnmeyer2018,"Frohnmeyer et al., 2018",
+Hu2021a,"Hu et al., 2021","shares a 15 nt 5' flank with Hu2021b"
+Hu2021b,"Hu et al., 2021","shares a 15 nt 5' flank with Hu2021a"

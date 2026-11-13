@@ -1,0 +1,36 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "aptahmm: a hidden Markov model based DNA aptamer sequence generator"
+abstract: >-
+  aptahmm fits a first-order discrete hidden Markov model to a curated set of
+  experimentally validated single-stranded DNA aptamers and samples
+  fixed-length candidate sequences from the fitted model. Candidates are
+  ranked by a position-specific scoring matrix derived from the same seed set
+  and filtered on GC content and homopolymer run length. The package also
+  detects and removes the constant SELEX primer-binding regions that are
+  commonly retained in published aptamer sequences, and reports the
+  information criteria and per-sequence hidden-state occupancies needed to
+  judge whether a given seed set supports the fitted model. The model encodes
+  general sequence characteristics of SELEX-derived ssDNA aptamers and makes
+  no claim of affinity for any particular molecular target.
+type: software
+version: 1.0.0
+date-released: "2026-11-11"
+license: MIT
+authors:
+  - family-names: Kothandan
+    given-names: Ram
+    affiliation: >-
+      Centre for Biocomputing, Department of Biotechnology and
+      Bioinformatics, Kumaraguru College of Technology, Coimbatore,
+      Tamil Nadu, India
+    orcid: "https://orcid.org/0000-0002-8104-9046"
+keywords:
+  - aptamer
+  - hidden Markov model
+  - DNA
+  - SELEX
+  - sequence generation
+  - bioinformatics
+repository-code: "https://zenodo.org/uploads/24132923"
+doi: "10.5281/zenodo.24132923"

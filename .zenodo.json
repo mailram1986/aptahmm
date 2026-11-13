@@ -1,0 +1,35 @@
+{
+  "title": "aptahmm: a hidden Markov model based DNA aptamer sequence generator",
+  "description": "<p>aptahmm fits a first-order discrete hidden Markov model to a curated set of experimentally validated single-stranded DNA aptamers and samples fixed-length candidate sequences from the fitted model. Candidates are ranked by a position-specific scoring matrix derived from the same seed set and filtered on GC content and homopolymer run length.</p><p>The package additionally detects and removes the constant SELEX primer-binding regions that are frequently retained in published aptamer sequences, and reports the information criteria, convergence diagnostics and per-sequence hidden-state occupancies needed to judge whether a given seed set actually supports the fitted model.</p><p><strong>Scope.</strong> The model encodes general sequence characteristics of SELEX-derived ssDNA aptamers. It does not encode or predict affinity for any molecular target, and no claim of target specificity should be made on the basis of its output. Target selection is the role of the downstream docking and simulation stages of an aptamer design pipeline. The model likewise generates sequence only: it does not compute, predict or imply secondary structure, folding free energy or any other thermodynamic property, and no quantity in its output is an energy. Structural assessment requires a folding tool applied separately to the generated sequences.</p><p>The deposit includes the source code, the test suite, the curated seed set with its source references, a script that reproduces every reported result, and the run manifests recording the exact parameters and software versions used.</p>",
+  "upload_type": "software",
+  "license": "mit",
+  "access_right": "open",
+  "version": "1.0.0",
+  "language": "eng",
+  "creators": [
+    {
+      "name": "Kothandan, Ram",
+      "affiliation": "Centre for Biocomputing, Department of Biotechnology and Bioinformatics, Kumaraguru College of Technology, Coimbatore, Tamil Nadu, India",
+      "orcid": "0000-0002-8104-9046"
+    }
+  ],
+  "keywords": [
+    "aptamer",
+    "hidden Markov model",
+    "DNA aptamer",
+    "SELEX",
+    "sequence generation",
+    "position-specific scoring matrix",
+    "bioinformatics",
+    "computational biology"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "FILL_IN_MANUSCRIPT_DOI_ONCE_PUBLISHED",
+      "relation": "isSupplementTo",
+      "resource_type": "publication-article",
+      "scheme": "doi"
+    }
+  ],
+  "notes": "Software deposited in support of a manuscript. Replace the related-identifier DOI once the manuscript is published."
+}

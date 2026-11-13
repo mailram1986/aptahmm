@@ -1,0 +1,18 @@
+
+aptahmm 1.0.0 - generated 200 candidates
+  results/run_k2/candidates.fasta
+  results/run_k2/candidates.csv
+  results/run_k2/run_manifest.json
+
+top 10 by PSSM score:
+  rank  sequence                      bits    GC%
+     1  ACCCCAACAAGGTGGCTTGGTGT       1.11   56.5
+     2  CCACAACCGCGGGTTTCATTTGG       1.09   56.5
+     3  CAAAAGGCAAGATGTTATCCTCG       1.07   43.5
+     4  ACAAGTAACTCGGAGTTGGTTCC       1.04   47.8
+     5  AAACAAGACGGCTTTGTCTTCGC       1.04   47.8
+     6  TCAAGACAACGAGCGGGTGATTT       0.99   47.8
+     7  CACAGAACGACCCGTTTGGCGGT       0.99   60.9
+     8  GCACAAGCGGGTCTGTTTATCTT       0.98   47.8
+     9  GCCCGTACGCGTTGGTTCGTTTT       0.95   56.5
+    10  AGTCAACAAGGCGGTTTTCCTTG       0.94   47.8

@@ -1,0 +1,30 @@
+aptahmm 1.0.0 - seed set inspection
+
+file: data/seeds_ssdna_aptamers.fasta
+sequences: 12
+
+shared terminal flanks (trimmed)
+  5' shared flank (20 nt) in 2 sequences: AGCAGCACAGAGGTCAGATG
+  3' shared flank (21 nt) in 2 sequences: ACCTATGCGTGCTACCGTGAA
+
+offset terminal motifs (reported only, NOT trimmed)
+  5-prime 16 nt in 2: TGGCTAGCTCAGTCAT  [Hu2021a, Hu2021b]
+  -> check these against the primers in the source publications;
+     if any is a primer region, supply an explicit FlankReport.
+
+id                             raw  trim  removed
+Pobanz2016                      20    20  -
+Sampson2003                     90    90  -
+Schmitz2023                     60    60  -
+Duan2023a                       80    39  5'-20nt, 3'-21nt
+Duan2023b                       80    39  5'-20nt, 3'-21nt
+Abedi2023                       45    45  -
+Effah2023                       72    72  -
+Vishwakarma2023                 45    45  -
+Rizzotto2023                    71    71  -
+Frohnmeyer2018                  40    40  -
+Hu2021a                         61    61  -
+Hu2021b                         60    60  -
+
+raw      n=12  length 20-90 (mean 60.3, median 60.5)  GC 45.0-59.0% (mean 51.9%)
+trimmed  n=12  length 20-90 (mean 53.5, median 52.5)  GC 38.5-59.0% (mean 51.2%)

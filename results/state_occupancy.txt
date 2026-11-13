@@ -1,0 +1,27 @@
+fitted 2-state model, logL=-870.534, converged=True
+
+emission probabilities
+  state 1: A=0.234 C=0.246 G=0.275 T=0.246
+  state 2: A=0.029 C=0.288 G=0.222 T=0.461
+
+transition probabilities
+  from state 1: 0.990 0.010
+  from state 2: 0.031 0.969
+
+id                    len   state1%   state2%
+Pobanz2016             20      99.3       0.7
+Sampson2003            90      92.7       7.3
+Schmitz2023            60       2.2      97.8
+Duan2023a              39      23.8      76.2
+Duan2023b              39      97.6       2.4
+Abedi2023              45      99.4       0.6
+Effah2023              72      80.8      19.2
+Vishwakarma2023        45      97.4       2.6
+Rizzotto2023           71      89.5      10.5
+Frohnmeyer2018         40      94.5       5.5
+Hu2021a                61      98.2       1.8
+Hu2021b                60      98.3       1.7
+
+per-state dominance (sequences with >50% occupancy)
+  state 1: 10/12 (Pobanz2016, Sampson2003, Duan2023b, Abedi2023, Effah2023, Vishwakarma2023, Rizzotto2023, Frohnmeyer2018, Hu2021a, Hu2021b)
+  state 2: 2/12 (Schmitz2023, Duan2023a)
