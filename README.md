@@ -92,7 +92,7 @@ python3 -m aptahmm.cli select-states --seeds data/seeds_ssdna_aptamers.fasta \
 
 # 3. generate candidates
 python3 -m aptahmm.cli generate --seeds data/seeds_ssdna_aptamers.fasta \
-    --length 23 --states 2 -n 200 --out results/run_k2
+    --length 25 --states 2 -n 200 --out results/run_k2
 ```
 
 Every result quoted below is reproduced by `scripts/reproduce.sh`.
@@ -104,7 +104,7 @@ from aptahmm import GenerationConfig, generate, write_outputs
 from aptahmm.io import read_sequences
 
 seeds, ids = read_sequences("data/seeds_ssdna_aptamers.fasta")
-config = GenerationConfig(length=23, n_states=2, n_candidates=200, random_seed=20260101)
+config = GenerationConfig(length=25, n_states=2, n_candidates=200, random_seed=20260101)
 result = generate(seeds, config)
 write_outputs(result, "results/run_k2")
 ```
@@ -293,17 +293,17 @@ ten sit in the generic state at >89% occupancy.
 
 ### Generated candidates
 
-With `--states 2 --length 23 -n 200`, 8 000 sequences were drawn, 5 264 passed
+With `--states 2 --length 25 -n 200`, 8 000 sequences were drawn, 6 130 passed
 the composition filters, and the top 200 by PSSM score were returned
-(threshold −0.03 bits). The five highest-scoring:
+(threshold −0.04 bits). The five highest-scoring:
 
 | Rank | Sequence | PSSM (bits) | GC% |
 |---:|---|---:|---:|
-| 1 | `ACCCCAACAAGGTGGCTTGGTGT` | 1.11 | 56.5 |
-| 2 | `CCACAACCGCGGGTTTCATTTGG` | 1.09 | 56.5 |
-| 3 | `CAAAAGGCAAGATGTTATCCTCG` | 1.07 | 43.5 |
-| 4 | `ACAAGTAACTCGGAGTTGGTTCC` | 1.04 | 47.8 |
-| 5 | `AAACAAGACGGCTTTGTCTTCGC` | 1.04 | 47.8 |
+| 1 | `ACCTAATTGACTAGGGGTGGGTTTG` | 1.20 | 48.0 |
+| 2 | `AACATATAGAGTTGTGGGCGTAGTG` | 1.19 | 44.0 |
+| 3 | `CACCAATCGATGAGGTGTGATTTTG` | 1.19 | 44.0 |
+| 4 | `CCCAATCGGCTGAAGGTTTTGTTTT` | 1.19 | 44.0 |
+| 5 | `AAACCAGCACTACCGTTGTTGTTGC` | 1.18 | 48.0 |
 
 ### The hidden states make no measurable difference
 
@@ -312,12 +312,12 @@ Running the same pipeline with the BIC-selected single-state model
 
 | Model | n | mean PSSM (bits) | median | max |
 |---|---:|---:|---:|---:|
-| 1 state (composition only) | 200 | 0.702 | 0.668 | **1.181** |
-| 2 states | 200 | 0.708 | 0.678 | 1.113 |
+| 1 state (composition only) | 200 | 0.810 | 0.773 | **1.208** |
+| 2 states | 200 | 0.841 | 0.811 | 1.197 |
 
-The difference in mean score is **+0.007 bits** in favour of the two-state
-model — negligible, and the single-state model produces the single
-highest-scoring candidate. Both drew 8 000 sequences for 200 returned.
+The difference in mean score is **+0.031 bits** in favour of the two-state
+model — around 4% of the mean, and the single-state model still produces the
+single highest-scoring candidate. Both drew 8 000 sequences for 200 returned.
 
 This is the direct empirical counterpart of the BIC result: on this seed set
 the hidden states change neither the candidates nor their scores, so the HMM

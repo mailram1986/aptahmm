@@ -39,14 +39,14 @@ echo "== 3. per-sequence hidden-state occupancy (2-state model) =="
 python3 scripts/state_occupancy.py "$SEEDS" --states 2 | tee "$OUT/state_occupancy.txt"
 
 echo
-echo "== 4. candidate generation, 23 nt, 2-state model =="
+echo "== 4. candidate generation, 25 nt, 2-state model =="
 python3 -m aptahmm.cli generate --seeds "$SEEDS" \
-    --length 23 --states 2 -n 200 --out "$OUT/run_k2" | tee "$OUT/generate_k2.txt"
+    --length 25 --states 2 -n 200 --out "$OUT/run_k2" | tee "$OUT/generate_k2.txt"
 
 echo
-echo "== 5. candidate generation, 23 nt, 1-state (BIC-selected) baseline =="
+echo "== 5. candidate generation, 25 nt, 1-state (BIC-selected) baseline =="
 python3 -m aptahmm.cli generate --seeds "$SEEDS" \
-    --length 23 --states 1 -n 200 --out "$OUT/run_k1" | tee "$OUT/generate_k1.txt"
+    --length 25 --states 1 -n 200 --out "$OUT/run_k1" | tee "$OUT/generate_k1.txt"
 
 echo
 echo "== 6. test suite =="
